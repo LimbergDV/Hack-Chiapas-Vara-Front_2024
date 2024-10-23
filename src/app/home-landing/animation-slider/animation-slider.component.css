@@ -1,0 +1,28 @@
+.animationSlider-main {
+    max-height: 100px;
+    background-color: red;
+    overflow: hidden; 
+    position: relative; 
+  }
+  
+  .animationSlider-words {
+    display: flex; 
+    margin-right: 30px;
+    animation: slide 15s linear infinite; 
+  }
+
+  .animationSlider-words p{
+    padding-right: 70px;
+    padding-top: 20px;
+    
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+  
