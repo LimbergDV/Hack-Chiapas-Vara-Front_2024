@@ -1,0 +1,6 @@
+.main-content {
+    margin-left: 16rem; /* Deja espacio para el aside */
+    padding-top: 5rem; /* Asegúrate de que este valor sea igual o mayor que la altura del navbar */
+    padding: 1rem;
+  }
+  
