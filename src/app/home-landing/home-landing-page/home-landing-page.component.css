@@ -47,6 +47,18 @@
   animation: fadeIn 2s ease-out forwards;
 }
 
+.content-div-prices-title{
+  max-width: 100vw;
+  height: 300px;
+}
+
+.content-div-prices-text{
+  margin-left: 45%;
+  padding-top: 1.5%;
+  font-size: 100px;
+  color: white;
+}
+
 
 
 @keyframes titleSlideIn {
