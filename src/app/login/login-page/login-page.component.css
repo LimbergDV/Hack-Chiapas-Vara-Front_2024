@@ -1,0 +1,147 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #141B2B;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.login-title{
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  color: white;
+  margin-left: 12vh;
+}
+
+.login-form {
+  width: 90%;
+  max-width: 520px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgba(88, 130, 193, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.login-form h1 {
+  font-size: 34px;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.login-form h2 {
+  font-size: 19px;
+  text-align: center;
+  height: auto;
+  margin: 0 0 20px 0;
+}
+
+.login-form .input-email,
+.login-form .input-password {
+  position: relative;
+  width: 100%;
+  font-family: 'Abel', sans-serif;
+  height: 50px;
+  color: white;
+  margin: 50px 0;
+  font-weight: bolder;
+}
+
+.input-email input,
+.input-password input {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+.input-email .icon,
+.input-password .icon-lock {
+  position: absolute;
+  right: 10px;
+  top: 99%;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+
+.login-form button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #006AFF;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login-form .register-option,
+.login-form .admin-option,
+.login-form .receptionist-option {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.admin-option button{
+  width: 50%;
+  background-color: rgb(0, 106, 255);
+  color: white;
+}
+
+.register-option a{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+.register-option .parraf{
+  font-weight: bold;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login-form {
+    padding: 20px;
+  }
+
+  .login-form h1 {
+    font-size: 28px;
+  }
+
+  .login-form h2 {
+    font-size: 16px;
+  }
+
+  .input-email .icon,
+  .input-password .icon-lock {
+    font-size: 20px;
+  }
+
+  .login-form button {
+    font-size: 14px;
+  }
+
+  .login-form .register-option,
+  .login-form .admin-option,
+  .login-form .receptionist-option {
+    font-size: 14px;
+  }
+}
