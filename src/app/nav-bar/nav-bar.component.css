@@ -1,0 +1,18 @@
+.text-center {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    background-color: #141B2B;
+    border-bottom: 1px solid gray;
+}
+
+
+.container-logo{
+    width: 230px;
+    height: auto;
+    margin-left: 3%;
+}
+
+.container-logo img {
+    width: 100%;
+}
