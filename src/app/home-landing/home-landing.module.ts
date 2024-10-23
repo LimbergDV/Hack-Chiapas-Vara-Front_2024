@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeLandingPageComponent } from './home-landing-page/home-landing-page.component';
 import { AnimationSliderComponent } from './animation-slider/animation-slider.component';
+import { CardImgComponent } from './card-img/card-img.component';
+import { PricesComponent } from './prices/prices.component';
 
 
 
@@ -10,7 +12,9 @@ import { AnimationSliderComponent } from './animation-slider/animation-slider.co
 @NgModule({
   declarations: [
     HomeLandingPageComponent,
-    AnimationSliderComponent
+    AnimationSliderComponent,
+    CardImgComponent,
+    PricesComponent
   ],
   imports: [
     CommonModule
