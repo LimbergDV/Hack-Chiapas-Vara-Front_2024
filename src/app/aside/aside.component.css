@@ -1,12 +1,14 @@
 aside {
   background-color: #141B2B;
   min-height: 100vh;
-  position:fixed;
+  position: fixed;
+
 }
+
 
 .box-action{
   width: 15.5rem;
-  height: 8.08rem;
+  height: 6.8rem;
   display: flex;
   align-items: center;
   gap: 1rem;
