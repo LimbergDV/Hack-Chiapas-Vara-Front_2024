@@ -5,18 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HomeLandingModule } from './home-landing/home-landing.module';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
+    NavBarComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    HomeLandingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

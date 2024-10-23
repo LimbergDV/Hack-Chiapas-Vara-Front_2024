@@ -1,14 +1,21 @@
-<div class="flex flex-col items-center bg-dark-blue text-center p-8">
+<header>
+<div class="flex flex-row items-center justify-between bg-dark-blue p-8">
+  <div class="flex flex-col text-left animate-container">
     <div class="slogan-main mb-4">
-      <h1 class="slogan-title text-7xl font-bold text-light-blue " >For you <span class="block">security</span></h1>
+      <h1 class="slogan-title text-7xl font-bold text-light-blue animate-title">For you <span class="block animate-security">security</span></h1>
     </div>
-    <p class="slogan-p text-lg text-white mb-6">
-      Protecting Data Integrity and User Trust in a Digital Era
+    <p class="slogan-p text-lg text-white animate-paragraph">
+      Protecting Data Integrity 
+      and <br> User Trust in a Digital Era
     </p>
-    <div class="slogan-img flex items-center justify-center rounded-full bg-gray-200 p-6">
-      <div class="flex items-center space-x-4">
-        <img src='home-landing/slogan-img.svg' alt="">
-      </div>
-    </div>
   </div>
-  
+
+  <div class="slogan-img flex items-center justify-center bg-gray-200 rounded-full">
+    <img src='home-landing/slogan-img.svg' alt="Security Image" class="slogan-img-svg">
+  </div>
+</div>
+</header>
+<section class="animation-slider">
+  <app-animation-slider></app-animation-slider>
+</section>
+
