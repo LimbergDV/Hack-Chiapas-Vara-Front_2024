@@ -1,18 +1,20 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FileService {
+  private url = 'http://localhost:3000/document/documents'; // Cambia esto a tu URL
 
-  private url = 'http://localhost:3000/documents';
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  public sendDocument(document: File | undefined): Observable<void> {
-    return this.http.post<void> (`${this.url}/save-document`, document);
+  public sendDocument(file: File, idCategoria: number): Observable<any> {
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('id_category_Document', idCategoria.toString());
+    
+    return this.http.post<any>(this.url, formData);
   }
-
 }
