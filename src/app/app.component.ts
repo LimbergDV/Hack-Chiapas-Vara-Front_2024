@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { IActionHome } from './interfaces/iaction-home';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,4 @@ import { IActionHome } from './interfaces/iaction-home';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  
 }
