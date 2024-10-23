@@ -4,6 +4,8 @@
     gap: 7rem;
     background-color: #141B2B;
     border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0;
 }
 
 

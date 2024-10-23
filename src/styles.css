@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box}
+
 body {
     background-color: #141B2B;
     min-height: 100vh;
