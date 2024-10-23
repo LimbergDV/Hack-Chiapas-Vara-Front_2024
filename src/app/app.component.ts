@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IActionHome } from './interfaces/iaction-home';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'hack-chiapas-vara-2024';
+  
 }

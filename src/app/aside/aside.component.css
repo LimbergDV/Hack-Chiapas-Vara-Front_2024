@@ -1,0 +1,26 @@
+aside {
+  background-color: #141B2B;
+  min-height: 100vh;
+  position:fixed;
+}
+
+.box-action{
+  width: 15.5rem;
+  height: 8.08rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  padding: 0.5rem;
+  padding-left: 1rem;
+}
+
+.icon {
+  color: white;
+}
+
+.box-action p {
+  color: white;
+}
