@@ -5,7 +5,7 @@
       <h1 class="slogan-title text-7xl font-bold text-light-blue animate-title">For you <span class="block animate-security">security</span></h1>
     </div>
     <p class="slogan-p text-lg text-white animate-paragraph">
-      Protecting Data Integrity 
+      Protecting Data Integrity
       and <br> User Trust in a Digital Era
     </p>
   </div>
@@ -37,9 +37,36 @@ textCover="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu 
 
 <section>
   <div class="content-div-prices-title">
-    <h1 class="content-div-prices-text" >PRICES</h1>
-</div>
-  <app-prices></app-prices>
-  <app-prices></app-prices>
+    <h1 class="content-div-prices-text">PRICES</h1>
+  </div>
+
+  <div class="prices-container">
+    <app-prices
+      [planType]="'Basic'"
+      [price]=19
+      [time]="'month'"
+      [info1]="'10GB Storage'"
+      [storage]="'24/7 Support'"
+      [info2]="'Unlimited Bandwidth'"
+      [infoPremium1]="'Premium Features'"
+      [infoPremium2]="'Priority Support'"
+      [infoPremium3]="'Custom Domain'"
+      [infoPremium4]="'Free Setup'">
+    </app-prices>
+
+    <app-prices
+      [planType]="'Pro'"
+      [price]=39
+      [time]="'month'"
+      [info1]="'50GB Storage'"
+      [storage]="'24/7 Support'"
+      [info2]="'Unlimited Bandwidth'"
+      [infoPremium1]="'Advanced Security'"
+      [infoPremium2]="'Priority Support'"
+      [infoPremium3]="'Custom Domain'"
+      [infoPremium4]="'Free Setup'">
+    </app-prices>
+  </div>
 </section>
+
 
