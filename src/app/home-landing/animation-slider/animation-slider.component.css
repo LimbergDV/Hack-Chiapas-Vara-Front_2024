@@ -1,0 +1,50 @@
+.animationSlider-main {
+    max-height: 100px;
+    background: linear-gradient(135deg, #141B2B, #1D2333); 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.animationSlider-words {
+    display: flex; 
+    animation: slide 20s linear infinite; 
+}
+
+.animationSlider-words p {
+    padding: 15px 70px; 
+    color: #E0E0E0; 
+    font-size: 24px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    white-space: nowrap; 
+    transform-origin: center; 
+    animation: wordAnimation 20s linear infinite;
+}
+
+@keyframes wordAnimation {
+    0% {
+        transform: scale(1) rotate(0deg); 
+    }
+    20% {
+        transform: scale(1.2) rotate(-5deg); 
+    }
+    50% {
+        opacity: 1; 
+    }
+    80% {
+        opacity: 1; 
+    }
+    100% {
+        transform: scale(1) rotate(5deg); 
+
+        opacity: 0;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

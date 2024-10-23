@@ -1,0 +1,12 @@
+<div class="why-are-we-safe-container">
+    <div class="image-section">
+        <img src={{imgUrl}} alt="Network Graphic" />
+      </div>
+    <div class="text-section" [ngClass]="{'left-side': isLeft, 'right-side': !isLeft}">
+      <h1 class="text-section-title">{{titleCover}}</h1>
+      <p class="text-section-text">
+        {{textCover}}
+      </p>
+    </div>
+  </div>
+  
