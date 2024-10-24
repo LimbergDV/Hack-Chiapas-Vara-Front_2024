@@ -12,6 +12,10 @@ import { AddNewButtonComponent } from './add-new-button/add-new-button.component
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    AddNewButtonComponent,
+   
   ]
 })
 export class AllFilesModule { }

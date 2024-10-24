@@ -28,4 +28,9 @@ export class DocumentService {
 
     return this._http.post<any>(this._apiUrl, formData);
   }
+
+    // Método para obtener documentos por categoría
+    obtainDocumentsOfCategory(category: string): Observable<IDocumentReceive[]> {
+      return this._http.get<IDocumentReceive[]>(`${this._apiUrl}/category/${category}`);
+    }
 }
