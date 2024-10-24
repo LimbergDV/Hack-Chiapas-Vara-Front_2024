@@ -1,0 +1,61 @@
+<section>
+    <app-add-new-button
+      [nameButton]="' + Add Document'"
+      (clickButton)="openModal()"
+    ></app-add-new-button>
+  </section>
+  
+
+  
+  <main class="main-formulario">
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+      <h2 class="text-lg font-bold py-4">Personal</h2>
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-200">
+          <tr>
+            <th class="px-6 py-3">Document Name</th>
+            <th class="px-6 py-3">Creation Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let document of personalDocuments">
+            <td class="px-6 py-4">{{ document.original_filename }}</td>
+            <td class="px-6 py-4">{{ document.creation_date }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <h2 class="text-lg font-bold py-4">Académico</h2>
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-200">
+          <tr>
+            <th class="px-6 py-3">Document Name</th>
+            <th class="px-6 py-3">Creation Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let document of academicDocuments">
+            <td class="px-6 py-4">{{ document.original_filename }}</td>
+            <td class="px-6 py-4">{{ document.creation_date }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <h2 class="text-lg font-bold py-4">Laboral</h2>
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-200">
+          <tr>
+            <th class="px-6 py-3">Document Name</th>
+            <th class="px-6 py-3">Creation Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let document of laboralDocuments">
+            <td class="px-6 py-4">{{ document.original_filename }}</td>
+            <td class="px-6 py-4">{{ document.creation_date }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  

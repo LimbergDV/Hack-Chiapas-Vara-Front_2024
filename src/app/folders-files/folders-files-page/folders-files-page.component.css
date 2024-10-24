@@ -1,0 +1,15 @@
+.folders-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 80px; 
+  }
+  
+  .myfolders-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color:white;
+  }
+  
