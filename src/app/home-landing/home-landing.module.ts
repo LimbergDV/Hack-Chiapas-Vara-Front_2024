@@ -18,6 +18,9 @@ import { PricesComponent } from './prices/prices.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    PricesComponent
   ]
 })
 export class HomeLandingModule { }

@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class PricesComponent {
 
   @Input ()planType: string= "";
-  @Input ()price: string= "";
+  @Input ()price: number= 0;
   @Input ()time: string= "";
   @Input ()info1: string= "";
   @Input ()storage: string= "";
