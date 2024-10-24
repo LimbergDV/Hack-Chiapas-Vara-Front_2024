@@ -17,5 +17,5 @@ export class AddNewButtonComponent implements OnInit{
     this.clickButton.emit(); 
   }
   
-
+  
 }

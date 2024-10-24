@@ -7,9 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeLandingModule } from './home-landing/home-landing.module';
 import { AsideComponent } from './aside/aside.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { EjemlploComponent } from './ejemlplo/ejemlplo.component';
-
-
+import { AllFilesModule } from './all-files/all-files.module';
 
 @NgModule({
   declarations: [
@@ -17,14 +15,14 @@ import { EjemlploComponent } from './ejemlplo/ejemlplo.component';
     NavBarComponent,
     AsideComponent,
     NavBarComponent,
-    EjemlploComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HomeLandingModule
+    HomeLandingModule,
+    AllFilesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

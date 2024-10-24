@@ -1,0 +1,53 @@
+<section>
+    <app-add-new-button
+    [nameButton]= " '+ Add Document'"
+    (clickButton)="openModal()"
+    ></app-add-new-button> 
+</section>
+
+<app-add-modal 
+    *ngIf="showModal" 
+    
+    (closeModal)="closeModal()"
+></app-add-modal>
+
+<main class="main-formulario">
+  <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table
+      class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+    >
+      <thead
+        class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-200"
+        >
+        <tr>
+          <th scope="col" class="px-36 py-6 ml-16 " >
+            <div class="flex items-center">NAME DOCUMENT</div>
+          </th>
+          <th scope="col" class="py-6 px-72 ">
+            <div class="flex items-center">DATE CREATED</div>
+          </th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let document of documents"
+          
+        >
+          <th
+            scope="row"
+            class="px-28     py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            {{ document.original_filename }}
+          </th>
+          <th
+            scope="row"
+            class="px-64 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            {{ document.creation_date }}
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
