@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeLandingModule } from './home-landing/home-landing.module';
 import { AsideComponent } from './aside/aside.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FoldersFilesModule } from './folders-files/folders-files.module';
 
 
 
@@ -22,7 +23,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HomeLandingModule
+    HomeLandingModule,
+    FoldersFilesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

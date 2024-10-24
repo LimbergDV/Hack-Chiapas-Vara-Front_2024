@@ -9,10 +9,10 @@ const routes: Routes = [
   {path:'folders', component: FoldersFilesPageComponent },
   {path:'login', component: LoginPageComponent},
   {path:'home-landing', component: HomeLandingPageComponent },
-  {path:'register', component: PageRegisterComponent}
+  {path:'register', component: PageRegisterComponent},
 
-
-  
+  { path: '', redirectTo: '/home-landing', pathMatch: 'full' },
+  { path: 'folders/:id', component: FoldersFilesPageComponent }, 
 ];
 
 

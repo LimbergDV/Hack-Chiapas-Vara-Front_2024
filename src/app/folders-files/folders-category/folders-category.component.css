@@ -1,0 +1,18 @@
+.carpet-card {
+    width: 325px;
+    border: 1px solid #ddd;
+    background-color: rgb(70, 80, 93);
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .carpet-card:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carpet-card .text-lg {
+    font-size: 18px;
+    font-weight: bold;
+  }
