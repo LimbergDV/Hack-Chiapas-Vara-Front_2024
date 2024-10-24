@@ -6,9 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeLandingModule } from './home-landing/home-landing.module';
 import { AsideComponent } from './aside/aside.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { UpgradeAccountModule } from './upgrade-account/upgrade-account.module';
-
-
+import { AllFilesModule } from './all-files/all-files.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +20,10 @@ import { UpgradeAccountModule } from './upgrade-account/upgrade-account.module';
     AppRoutingModule,
     HttpClientModule,
     HomeLandingModule,
+
+    AllFilesModule
     UpgradeAccountModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
