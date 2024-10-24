@@ -1,17 +1,26 @@
-import { Component } from '@angular/core';
-import { FileService } from '../services/file.service';
+import { Component, Output, EventEmitter } from '@angular/core';
 import Swal from 'sweetalert2';
+import { DocumentService } from '../../services/document.service';
+
 
 @Component({
-  selector: 'app-file-page',
-  templateUrl: './file-page.component.html',
-  styleUrl: './file-page.component.css',
+  selector: 'app-add-modal',
+  templateUrl: './add-modal.component.html',
+  styleUrl: './add-modal.component.css',
 })
-export class FilePageComponent {
-  file: File | undefined;
-  idCategoria: number | undefined; // Cambiado a undefined para permitir la verificación
+export class AddComponent {
 
-  constructor(private _service: FileService) {}
+//MODALAS
+  @Output() closeModal= new EventEmitter<void>();
+
+  onClose(){
+    this.closeModal.emit();
+  }
+
+  file: File | undefined;
+  idCategoria: number | undefined;
+
+  constructor(private _service: DocumentService) {}
 
   onFileSelected(event: any): void {
     if (event.target.files[0] !== undefined) {
@@ -19,15 +28,11 @@ export class FilePageComponent {
     }
   }
 
-  // Captura el evento de selección de categoría
   onCategorySelected(event: any): void {
-    this.idCategoria = +event.target.value; // Convertir a número
+    this.idCategoria = +event.target.value;
   }
 
   sendFile(): void {
-    console.log(this.file, this.idCategoria); // Para depuración
-
-    // Asegúrate de que se seleccionó un archivo y una categoría
     if (!this.file || !this.idCategoria) {
       Swal.fire({
         icon: 'warning',
