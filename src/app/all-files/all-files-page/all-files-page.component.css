@@ -1,0 +1,24 @@
+.main-formulario {
+    width: 95%;
+    margin-left: 2.3rem;
+    padding: 20px;
+}
+
+.relative {
+    width: 100%; 
+    overflow-x: auto;
+   
+}
+
+table {
+    width: 94%;
+    border-collapse: collapse;
+}
+
+tbody > tr {
+    border-bottom: 2px #FFF solid;
+    background-color: #1e2942;
+}
+
+
+
