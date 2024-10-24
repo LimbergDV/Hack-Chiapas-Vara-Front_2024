@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'register', component: PageRegisterComponent},
   {path:'home-landing', component: HomeLandingPageComponent },
   {path:'register', component: PageRegisterComponent},
-  {path:'stogare', component: ViewComponent}
+  {path:'stogare', component: ViewComponent},
   { path: 'folders/categorized', component: CategorizedFilesPageComponent },
   { path: 'allDocuments', component: AllFilesPageComponent},
   { path: 'upGrade', component: UpgradeAccountPageComponent},
