@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeLandingModule } from './home-landing/home-landing.module';
 import { AsideComponent } from './aside/aside.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { UpgradeAccountModule } from './upgrade-account/upgrade-account.module';
 
 
 
@@ -20,7 +21,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HomeLandingModule
+    HomeLandingModule,
+    UpgradeAccountModule
   ],
   providers: [],
   bootstrap: [AppComponent]
